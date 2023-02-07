@@ -75,22 +75,32 @@
                     html="<p id='timer' style='font-size:24px; font-weight:bold;'></p>
 <center><iframe data-aa='2165576' src='//ad.a-ads.com/2165576?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe></center>
 
-<script>
-    // Set the count down timer for 5 seconds
-    var count = 4;
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-        count--;
-        document.getElementById('timer').innerHTML = count + ' seconds left';
-        
-        // If the count down is finished
-        if (count <= 0) {
-            clearInterval(x);
-            document.getElementById('timer').innerHTML = 'Time's up!';
-        }
-    }, 1000);
-</script>
+<html>
+    <head>
+        <title>Countdown Timer</title>
+    </head>
+    <body>
+        <p id="timer" style="font-size:24px; font-weight:bold;"></p>
+
+        <script>
+            // Set the count down timer for 5 seconds
+            var count = 5;
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+                count--;
+                document.getElementById("timer").innerHTML = count + " seconds left";
+                
+                // If the count down is finished
+                if (count <= 0) {
+                    clearInterval(x);
+                    document.getElementById("timer").innerHTML = "Time's up!";
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>
+
 "
                   ></dangerous-html>
                 </div>
